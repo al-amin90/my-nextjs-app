@@ -5,7 +5,7 @@
         "productName": "Ultrabook X15",
         "category": "Laptop",
         "brand": "TechPro",
-        "price": 1200,
+        "price": 1999,
         "image": "https://www.pcworld.com/wp-content/uploads/2024/12/bf-laptop-1.jpg?quality=50&strip=all"
       },
       {
@@ -13,7 +13,7 @@
         "productName": "Gaming Beast G17",
         "category": "Laptop",
         "brand": "PowerCore",
-        "price": 1800,
+        "price": 110,
         "image": "https://www.pcworld.com/wp-content/uploads/2024/12/bf-laptop-2.jpg?quality=50&strip=all"
       },
       {
@@ -21,7 +21,31 @@
         "productName": "WorkMate SlimBook",
         "category": "Laptop",
         "brand": "NeoTech",
-        "price": 950,
+        "price": 15,
+        "image": "https://www.pcworld.com/wp-content/uploads/2024/12/bf-laptop-3.jpg?quality=50&strip=all"
+      },
+      {
+        "id": 4,
+        "productName": "Ultrabook X15",
+        "category": "Laptop",
+        "brand": "TechPro",
+        "price": 999,
+        "image": "https://www.pcworld.com/wp-content/uploads/2024/12/bf-laptop-1.jpg?quality=50&strip=all"
+      },
+      {
+        "id": 5,
+        "productName": "Gaming Beast G17",
+        "category": "Laptop",
+        "brand": "PowerCore",
+        "price": 1999,
+        "image": "https://www.pcworld.com/wp-content/uploads/2024/12/bf-laptop-2.jpg?quality=50&strip=all"
+      },
+      {
+        "id": 6,
+        "productName": "WorkMate SlimBook",
+        "category": "Laptop",
+        "brand": "NeoTech",
+        "price": 400,
         "image": "https://www.pcworld.com/wp-content/uploads/2024/12/bf-laptop-3.jpg?quality=50&strip=all"
       }
     ]

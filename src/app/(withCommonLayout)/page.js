@@ -1,25 +1,28 @@
-'use client'
-
+import ProductCard from "@/components/products/ProductCard";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import React from "react";
 
-const HomePage = () => {
-  const router = useRouter()
-
-  const handleNavigation = () => {
-    router.push('/dashboard')
-  }
+const HomePage = async () => {
+  const res = await fetch("http://localhost:5000/products", {
+    cache: "force-cache",
+  });
+  const products = await res.json();
 
   return (
     <div className="text-center">
-      <h1 className="text-5xl mx-auto my-6 font-bold">Font Optimizing is Here</h1>
-      <h1 className="text-2xl mx-auto my-6 font-bold">More Text is here now</h1>
-      {/* <Link href='/dashboard'> */}
-        <button onClick={handleNavigation} className="p-2 border-b-fuchsia-500 rounded-md">
-          Dashboard
+      <h1 className="text-5xl mx-auto my-6 font-bold">
+        Font Optimizing is Here
+      </h1>
+      <div className="grid grid-cols-3 gap-8 w-[90%] mx-auto mt-10">
+        {products.slice(0, 3).map((product) => (
+          <ProductCard product={product} key={product.id} />
+        ))}
+      </div>
+      <Link href="/products">
+        <button className="p-2 bg-blue-500 my-5 cursor-pointer rounded-md">
+          See More
         </button>
-      {/* </Link> */}
+      </Link>
     </div>
   );
 };
