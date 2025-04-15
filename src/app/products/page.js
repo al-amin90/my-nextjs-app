@@ -1,11 +1,17 @@
     import React from 'react';
     
-    const page = () => {
+    const ProductsPage = async() => {
+        const res = fetch('http://localhost:5000/products');
+        const products = (await res).json()
+        console.log(products);
+
         return (
             <div>
-                products
+                <h1 className='text-center text-4xl my-5'>
+                    Data fetching, caching and revalidating
+                </h1>
             </div>
         );
     };
     
-    export default page;
+    export default ProductsPage;
