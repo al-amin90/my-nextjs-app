@@ -10,7 +10,7 @@ const ProductsPage = async () => {
   return (
     <div>
       <h1 className="text-center text-4xl my-5">
-        Data fetching, caching and revalidating AAVC
+        Data fetching, caching and revalidating
       </h1>
 
       <div className="grid grid-cols-3 gap-8 w-[90%] mx-auto mt-10">
@@ -18,6 +18,7 @@ const ProductsPage = async () => {
           <ProductCard product={product} key={product.id} />
         ))}
       </div>
+      {/* there is more changess */}
     </div>
   );
 };
