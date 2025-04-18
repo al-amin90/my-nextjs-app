@@ -35,6 +35,16 @@ const Navabar = () => {
             Contact Us
           </Link>
           <Link
+            href="/contact"
+            className={
+              pathName == "/contact"
+                ? "text-blue-800 underline"
+                : "hover:text-gray-200 hover:underline text-white"
+            }
+          >
+            Commit Us
+          </Link>
+          <Link
             href="/products"
             className={
               pathName == "/products"
